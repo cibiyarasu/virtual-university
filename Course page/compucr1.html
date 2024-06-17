@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>C Programming</title>
+<style>
+  body{
+    background-image: linear-gradient(rgba(0, 0, 0,0.35)50%,rgba(0,0,0,0.35)50%),url('compic.jpg');
+    height: 50vh;
+    background-position:center;
+    background-size:cover;
+}
+
+.text-box{
+    position: absolute;
+    margin-top: -22%;
+    
+    font-size:95px;
+    font-weight: 20px;
+    left: 15%;
+    color: transparent;
+    -webkit-text-stroke: 1.17px #dfdede;
+    background: url(cc5.jpeg);
+    -webkit-background-clip: text;
+    background-position: 750px 800px;
+    animation:back 15s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 10px 800px;
+    }
+}
+
+form{
+  margin-top: 257px;
+  margin-bottom: 200px;
+  margin-left: 240px;
+  margin-right: 150px;
+  padding-left:2px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  width: 1200px;
+  height: 300px;
+  font-size: 100%;
+}
+
+button {
+
+padding: 1em 3em;
+
+color: rgb(110, 237, 237);
+
+font-size: 135%;
+font-weight: bold;
+text-transform: uppercase;
+
+text-shadow: 0 0 0.5em rgb(110, 237, 237);
+background-color: rgb(44, 157, 157);
+border-radius: 1em;
+border: 0.25em solid rgb(110, 237, 237); box-shadow: 0 0 1em 0.25em rgb(64, 211, 211),0 0 4em 1em rgba(65, 243, 243, 0.781),inset 0 0 0.75em 0.25em rgb(110, 237, 237);
+
+outline: none;
+
+cursor: pointer;
+
+transition: all 0.3s;
+
+}
+
+button::after {
+
+content:"";
+
+
+
+top: 120%;
+
+left: 0;
+
+height: 100%;
+
+width: 100%;
+
+background-color:rgba(65, 243, 243, 0.781);
+
+filter: blur (2em);
+
+opacity: 0.7;
+
+pointer-events: none;
+
+transform: perspective (1.5em) rotateX(35deg) scale(1, 0.6);
+
+}
+
+
+button:hover {
+
+color: rgb(44, 157, 157);
+ background-color:rgb(110, 237, 237);
+
+box-shadow: 0 0 1em 0.25em rgb(110, 237, 237), 0 0 4em 2em
+
+rgba(65, 243, 243, 0.781), inset 0 0 0.75em 0.25em
+
+rgb(110, 237, 237);
+
+}
+
+button:active {
+
+box-shadow: 0 0 0.6em 0.25em rgb(110, 237, 237),0 0 2.5em 2em rgba(65, 243, 243, 0.781),inset 0 0 0.5em 0.25em rgb(110, 237, 237);
+
+};
+
+
+</style>
+
+</head>
+<body>
+  <div class="text-box">
+    <p>
+        <h3>SELECT WEBSITE</h3>
+    </p>
+  </div> 
+    <form>
+     
+		<button class="left-top" onclick="window.open('https://www.udemy.com/course/c-programming-for-beginners-/?ranMID=39197&ranEAID=JVFxdTr9V80&ranSiteID=JVFxdTr9V80-s6XJbwW2vthvMSkJf6gH2Q&LSNPUBID=JVFxdTr9V80&utm_source=aff-campaign&utm_medium=udemyads')">Udemy</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="right-top" onclick="window.open('https://www.coursera.org/specializations/c-programming?irclickid=QWzX053BfxyNRzqToUVo8QnhUkDSc7WoZQZfWc0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=3294490&utm_content=b2c')">Coursera</button></br><br><br><br><br><br><br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;<button class="left-bot" onclick="window.open('https://www.edx.org/learn/c-programming')">Edx</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="right-bot" onclick="window.open('https://www.mygreatlearning.com/academy/learn-for-free/courses/c-programming')">Great Learning</button>
+    
+    </form> 
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Detials Page</title>
+
+<style>
+  body {
+  background: #ABCDEF;
+  font-family: Assistant, sans-serif;
+  display: flex;
+  min-height: 90vh;
+}
+h1{
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 10px;
+  font-size: 200%;
+}
+
+table{
+  border: 5px solid gray;
+  margin: 5px;
+  font-size: 200%;
+padding: 20px;
+}
+div{
+	width: 75%;
+	border: 30px;
+      background-color: green;
+}
+button{
+	margin-left: 20%;
+}
+</style>
+
+<script>
+function subm(){
+alert("Sucessfully submited");
+return false;
+}
+function cre(){
+alert("created new Customer: "+document.getElementById("custname").value+"\n ID: :"+document.getElementById("custid").value);
+return false;
+}
+</script>
+</head>
+<body>
+  <!-- partial:index.partial.html -->
+  <section class='login' id='login'>
+    <div class='head'>
+    <h1 class='company'>Attend call</h1>
+    </div>
+    <p class='msg'>Welcome back</p>
+    <div class='form'>
+      <form>
+    <input type="text" placeholder='Username' class='text' id='username' required><br>
+    <input type="password" placeholder='••••••••••••••' class='password'><br>
+    <a href="#" class='btn-login' id='do-login'>Login</a>
+    <a href="#" class='forgot'>Forgot?</a>
+      </form>
+    </div>
+  </section>
+
+  
+  </body>
+<body>
+<center> <h1> Details Page </h1>   </br> 
+    <form><table><tr> <td colspan="2"><center> Attend call </center></td></tr>   
+       <tr> <td> <label>Customer Name : </label> </td>
+            <td><input type="text" id="custname" required></td></tr>
+       <tr> <td> <label>Customer id : </label> </td>  
+            <td> <input type="text" id="custid" required></td></tr>
+       <tr>  <td>   <button onclick="subm()">Submit</button>  </td><td><button onclick="cre()">Create</button> </td></tr> 
+       <tr><td colspan="2"><button onclick="window.open('homepage.html')">Home</button></td></tr>
+	</table> 
+    </form> 
+</center> 
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lan="en" and dir="Itr">
+<head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+	<script>
+	function validate(){
+		var username = document.getElementById("email").value;
+		var password = document.getElementById("password").value;
+		if ( username == "USER" && password == "123"){
+			alert ("Login successfully");
+			window.open('homepage.html');
+			return false;
+		}else{
+			alert("Not Logged");
+			return false;
+		}
+	}
+	</script>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="container-label">Welcome to Login Page<span></span></div>
+        <div class="container-icon">
+            <div class="circle"><i class="bi bi-chevron-right"></i></div>
+        </div>
+        <div class="container-form">
+            <form>
+                <label for="email"><b>Student ID</b></label>
+                <input type="text" id="email" placeholder="Enter Your Student-Id" autofocus/>
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" id="password" placeholder="Enter Your password" />
+
+                <button onclick="validate()">Enter</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
